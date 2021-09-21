@@ -1,0 +1,63 @@
+:root {
+	--background-body: #5c6bc0;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: var(--background-body);
+}
+
+header {
+	width: 90%;
+	height: 80px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--background-body);
+}
+
+.header__logo img {
+	width: 120px;
+	height: 40px;
+}
+
+.header__menu {
+	position: relative;
+}
+
+.header__menu summary {
+	width: 50px;
+	height: 50px;
+	list-style-type: none;
+	background-size: cover;
+	background-image: url("./menu.svg");
+	cursor: pointer;
+}
+
+.header__menu ul {
+	position: absolute;
+	list-style-type: none;
+	width: 60px;
+}
+
+.header__menu ul li {
+	text-align: right;
+	margin: 10px 0;
+}
+
+.header__menu ul li a {
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: aliceblue;
+}

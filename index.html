@@ -3,53 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/phone.css">
+
     <title>FrontEndCourse</title>
 </head>
-<style>
-    :root {
-        --background-main: #F6F4F3;
-    }
-
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-
-    html {
-        font-size: 62.5%;
-        font-family: sans-serif;
-    }
-
-    body {
-        background-color: var(--background-main);
-    }
-
-    header {
-        height: 80px;
-
-        background-color: #5c6bc0;
-        }
-
-    .header__logo {
-        width: 120px;
-        height: 40px;
-        margin: 20px;
-    }
-
-    main {
-        background-color: #8e99f3;
-    }
-
-</style>
 <body>
     <header>
-        <img src="./vides_logo.png" alt="header-logo" class="header__logo">
-        <div>
-            <details>
-                <img src="./white-menu-icon.jpg" alt="header-menu">
-            </details>
+        <div class="header__logo">
+            <a href="./index.html">
+                <img src="./assets/vides_logo.png" alt="header-logo">
+            </a>
         </div>
+        <details class="header__menu">
+            <summary></summary>
+            <ul>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </details>
     </header>
     <main>
 
