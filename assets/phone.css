@@ -3,14 +3,14 @@
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
 	font-family: sans-serif;
+	font-size: 62.5%;
 }
 
 body {
@@ -18,18 +18,19 @@ body {
 }
 
 header {
-	width: 90%;
-	height: 80px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: var(--background-body);
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
 }
 
 .header__logo img {
-	width: 120px;
+	cursor: pointer;
 	height: 40px;
+	width: 120px;
 }
 
 .header__menu {
@@ -37,27 +38,32 @@ header {
 }
 
 .header__menu summary {
-	width: 50px;
-	height: 50px;
-	list-style-type: none;
 	background-size: cover;
 	background-image: url("./menu.svg");
 	cursor: pointer;
+	height: 50px;
+	list-style-type: none;
+	width: 50px;
 }
 
 .header__menu ul {
-	position: absolute;
 	list-style-type: none;
-	width: 60px;
+	position: absolute;
+	right: 0px;
+	width: 80px;
 }
 
 .header__menu ul li {
-	text-align: right;
 	margin: 10px 0;
+	text-align: right;
 }
 
 .header__menu ul li a {
-	font-size: 1.6rem;
-	text-decoration: none;
 	color: aliceblue;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.header__menu ul li a:hover {
+	text-decoration: underline;
 }
