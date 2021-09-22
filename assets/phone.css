@@ -1,5 +1,9 @@
 :root {
-	--background-body: #5c6bc0;
+	--background: #5c6bc0;
+	--background-soft: #8e99f3;
+	--font-main: #d0d4eb;
+	--white-soft: aliceblue;
+	--dark-purpple: #43519e;
 }
 
 * {
@@ -14,12 +18,12 @@ html {
 }
 
 body {
-	background-color: var(--background-body);
+	background-color: var(--background);
 }
 
 header {
 	align-items: center;
-	background-color: var(--background-body);
+	background-color: var(--background);
 	display: flex;
 	height: 80px;
 	justify-content: space-between;
@@ -59,11 +63,56 @@ header {
 }
 
 .header__menu ul li a {
-	color: aliceblue;
+	color: var(--font-main);
 	font-size: 2rem;
 	text-decoration: none;
 }
 
 .header__menu ul li a:hover {
 	text-decoration: underline;
+}
+
+.searcher {
+	background-image: url(./background-input-v2.jpg);
+	background-size: cover;
+	height: 240px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.searcher__background {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 240px;
+}
+
+.searcher__tittle {
+	color: var(--white-soft);
+	font-size: 1.8rem;
+	margin: 0px auto;
+	padding-top: 75px;
+	position: relative;
+	width: 261px;
+}
+
+.searcher input {
+	background-color: var(--dark-purpple);
+	background-image: url(./search-image.svg);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 5px);
+	border-color: var(--background-soft);
+	border-style: solid;
+	border-radius: 20px;
+	border-width: 3px;
+	color: var(--white-soft);
+	display: block;
+	font-size: 1.8rem;
+	height: 40px;
+	margin: 30px auto 0px;
+	outline: none;
+	padding-left: 10px;
+	width: 85%;
+}
+
+::placeholder {
+	color: var(--font-main);
 }
