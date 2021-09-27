@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+	outline: none;
 }
 
 html {
@@ -37,17 +38,74 @@ header {
 	width: 120px;
 }
 
-.login {
-	background-color: var(--dark-purpple);
-	height: 500px;
-	padding-top: 40px;
+.login__container {
+	align-content: center;
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 460px;
+	padding: 50px;
+	position: relative;
+	width: 100%;
 }
 
-.login__container {
-	background-color: var(--background);
-	border-radius: 20px;
-	height: 420px;
-	margin: 0px auto;
-	position: relative;
-	width: 250px;
+.login__container--form > input {
+	color: var(--dark-purpple);
+	border-color: var(--background-soft);
+	border-radius: 27px;
+	border-style: solid;
+	border-width: 4px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	height: 54px;
+	margin: 0px 0px 30px 0px;
+	padding: 0px 15px;
+	width: 100%;
+}
+
+::placeholder {
+	color: var(--dark-purpple);
+}
+
+.login__container--form > button {
+	color: var(--white-soft);
+	background-color: var(--dark-purpple);
+	border-radius: 27px;
+	border-width: 0px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	height: 54px;
+	margin: 0px 0px 30px 0px;
+	width: 100%;
+}
+
+.login__container--form > button:hover {
+	color: var(--dark-purpple);
+	cursor: pointer;
+	background-color: var(--white-soft);
+	transition: 450ms;
+}
+
+.login__container--form > div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	/* width: 100px; */
+}
+
+.login__container--form label {
+	color: var(--white-soft);
+	font-size: 1.6rem;
+	margin: 0px 0px 10px 0px;
+}
+
+.login__container--form a {
+	color: var(--white-soft);
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.login__container--form a:hover {
+	text-decoration: underline;
 }

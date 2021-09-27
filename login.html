@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="./assets/login-phone.css">
 
-    <title>Login</title>
+    <title>Log in</title>
 </head>
 <body>
     <header>
@@ -18,7 +18,19 @@
     </header>
     <section class="login">
         <section class="login__container">
-
+            <!-- <h2 class="login__title">Log in</h2> -->
+            <form class="login__container--form">
+                <input class="user" type="text" placeholder="User">
+                <input class="password" type="password" placeholder="Password">
+                <button>Log in</button>
+                <div>
+                    <label>
+                        <input type="checkbox" id="cbox1" value="checkbox">
+                        Remember user
+                    </label>
+                    <a href="/">Forgot my password</a>
+                </div>
+            </form>
         </section>
     </section>
 </body>
