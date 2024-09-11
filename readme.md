@@ -3,3 +3,5 @@
 ## Contributing
 
 ## Usage
+
+## License
